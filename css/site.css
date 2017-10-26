@@ -1,0 +1,9 @@
+.home-body {
+  color: #fff;
+  background-image:
+    radial-gradient(
+      circle at top right,
+      #3327a1,
+      #3e0085
+    );
+}

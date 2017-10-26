@@ -1,0 +1,3 @@
+(function () {
+  // Site code here
+}());
