@@ -10,10 +10,47 @@
     <link rel="stylesheet" href="/css/site.css">
   </head>
   <body class="home-body">
-    <div class="container">
-      <h1 class="text-center py-5">
-        Portfolio - Patrick Ferguson
+    <div class="container py-5">
+      <h1 class="text-center mb-4">
+        Patrick Ferguson
       </h1>
+
+      <p class="text-center h4 mb-4">
+        Programmer &amp; Project Manager
+      </p>
+
+      <p class="text-center">
+        Web Front/Back End &middot; Games &middot; Simulation &middot; VR/AR/MR
+      </p>
+
+      <!-- Contact form using https://formspree.io/ -->
+      <h2 class="text-center">
+        Get in touch
+      </h2>
+      <form id="contact-form" action="https://formspree.io/contact@ferguson.cloud" method="POST">
+        <div class="form-group">
+          <div class="row">
+            <div class="col">
+              <label for="contact-input-name">Your name</label>
+              <input id="contact-input-name" type="text" name="name" class="form-control">
+            </div>
+            <div class="col">
+              <label for="contact-input-email">Your email</label>
+              <input id="contact-input-email" type="email" name="email" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-input-message">Message</label>
+          <textarea id="contact-input-message" name="message" rows="4" class="form-control"></textarea>
+        </div>
+
+        <input id="contact-email-subject" type="hidden" name="_subject" value="New submission from patrickferguson.cloud" />
+        <!-- Avoid simple bots 🤖 -->
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <input type="submit" value="Send" class="btn btn-primary">
+      </form>
 
       <div class="row text-center">
         <div class="col-md-6">
