@@ -97,34 +97,38 @@
         </div>
 
         <div class="section section-contact">
-          <!-- Contact form using https://formspree.io/ -->
-          <h2 class="subheading text-center">
-            Get In Touch
-          </h2>
-          <form id="contact-form" action="https://formspree.io/contact@ferguson.cloud" method="POST">
-            <div class="form-group">
-              <div class="row">
-                <div class="col">
-                  <label for="contact-input-name">Your Name</label>
-                  <input id="contact-input-name" type="text" name="name" required class="form-control">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <!-- Contact form using https://formspree.io/ -->
+              <h2 class="subheading text-center">
+                Get In Touch
+              </h2>
+              <form id="contact-form" action="https://formspree.io/contact@ferguson.cloud" method="POST">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <label for="contact-input-name">Your Name</label>
+                      <input id="contact-input-name" type="text" name="name" required class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="contact-input-email">Your Email</label>
+                      <input id="contact-input-email" type="email" name="email" required class="form-control">
+                    </div>
+                  </div>
                 </div>
-                <div class="col">
-                  <label for="contact-input-email">Your Email</label>
-                  <input id="contact-input-email" type="email" name="email" required class="form-control">
+                <div class="form-group">
+                  <label for="contact-input-message">Message</label>
+                  <textarea id="contact-input-message" name="message" rows="4" required class="form-control"></textarea>
                 </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="contact-input-message">Message</label>
-              <textarea id="contact-input-message" name="message" rows="4" required class="form-control"></textarea>
-            </div>
 
-            <input id="contact-email-subject" type="hidden" name="_subject" value="New submission from patrickferguson.cloud" />
-            <!-- Avoid simple bots 🤖 -->
-            <input type="text" name="_gotcha" style="display:none" />
+                <input id="contact-email-subject" type="hidden" name="_subject" value="New submission from patrickferguson.cloud" />
+                <!-- Avoid simple bots 🤖 -->
+                <input type="text" name="_gotcha" style="display:none" />
 
-            <input type="submit" value="Send" class="btn btn-primary">
-          </form>
+                <input type="submit" value="Send" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
