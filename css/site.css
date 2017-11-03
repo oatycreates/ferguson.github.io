@@ -1,0 +1,39 @@
+.home-body {
+  color: #fff;
+  background-color: #000;
+  background-image:
+    radial-gradient(
+      circle at top right,
+      #3327a1,
+      #3e0085
+    );
+
+  /* Fixes display of gradient if content is shorter than the screen */
+  min-height: 100vh;
+}
+
+.heading {
+  margin-bottom: 3rem;
+}
+
+.subheading {
+  margin-bottom: 1.5rem;
+}
+
+/* Add spacing between sections */
+.section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* Remove extra padding on first and last section, doesn't correctly handle nested sections */
+.section:first-of-type {
+  margin-top: -1.5rem;
+}
+.section:last-of-type {
+  margin-bottom: -1.5rem;
+}
+
+.socials-link:hover {
+  /* Fixes underscore appearing next to fontawesome icon on hover */
+  text-decoration: none;
+}
