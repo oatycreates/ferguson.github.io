@@ -32,3 +32,8 @@
 .section:last-of-type {
   margin-bottom: -1.5rem;
 }
+
+.socials-link:hover {
+  /* Fixes underscore appearing next to fontawesome icon on hover */
+  text-decoration: none;
+}
