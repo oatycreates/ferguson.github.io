@@ -12,6 +12,14 @@
   min-height: 100vh;
 }
 
+.heading {
+  margin-bottom: 3rem;
+}
+
+.subheading {
+  margin-bottom: 1.5rem;
+}
+
 .section {
   margin-bottom: 3rem;
 }
