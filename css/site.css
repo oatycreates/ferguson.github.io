@@ -11,3 +11,7 @@
   /* Fixes display of gradient if content is shorter than the screen */
   min-height: 100vh;
 }
+
+.section {
+  margin-bottom: 3rem;
+}
