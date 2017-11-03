@@ -1,9 +1,13 @@
 .home-body {
   color: #fff;
+  background-color: #000;
   background-image:
     radial-gradient(
       circle at top right,
       #3327a1,
       #3e0085
     );
+
+  /* Fixes display of gradient if content is shorter than the screen */
+  min-height: 100vh;
 }
