@@ -1,6 +1,21 @@
 .home-body {
   color: #fff;
   background-color: #3e0085;
+  /* TODO: Replace prefixed gradients with autoprefixer */
+  background-image:
+    -webkit-radial-gradient(
+      top right,
+      circle,
+      #3327a1,
+      #3e0085
+    );
+  background-image:
+    -o-radial-gradient(
+      top right,
+      circle,
+      #3327a1,
+      #3e0085
+    );
   background-image:
     radial-gradient(
       circle at top right,
