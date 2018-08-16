@@ -52,3 +52,7 @@
   /* Fixes underscore appearing next to fontawesome icon on hover */
   text-decoration: none;
 }
+
+.socials-link {
+  color: #3e0085;
+}
