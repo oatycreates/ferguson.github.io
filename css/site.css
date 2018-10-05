@@ -27,6 +27,16 @@
   min-height: 100vh;
 }
 
+/* Text selection colour */
+::-moz-selection {
+  color: #fff;
+  background: #3e0085;
+}
+::selection {
+  color: #fff;
+  background: #3e0085;
+}
+
 .heading {
   margin-bottom: 3rem;
 }
