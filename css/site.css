@@ -1,26 +1,26 @@
 .home-body {
   color: #fff;
-  background-color: #3e0085;
+  background-color: #6B003C;
   /* TODO: Replace prefixed gradients with autoprefixer */
   background-image:
     -webkit-radial-gradient(
       top right,
       circle,
-      #3327a1,
-      #3e0085
+      #FF5400,
+      #6B003C
     );
   background-image:
     -o-radial-gradient(
       top right,
       circle,
-      #3327a1,
-      #3e0085
+      #FF5400,
+      #6B003C
     );
   background-image:
     radial-gradient(
       circle at top right,
-      #3327a1,
-      #3e0085
+      #FF5400,
+      #6B003C
     );
 
   /* Fixes display of gradient if content is shorter than the screen */
@@ -30,12 +30,60 @@
 /* Text selection colour */
 ::-moz-selection {
   color: #fff;
-  background: #3e0085;
+  background: #FF5400;
 }
 ::selection {
   color: #fff;
-  background: #3e0085;
+  background: #FF5400;
 }
+
+/* START - BOOTSTRAP OVERRIDES */
+/* BOOTSTRAP FONT OVERRIDES */
+/* Heading font: Roboto */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body font: Roboto */
+:root {
+  --font-family-sans-serif: 'Roboto', sans-serif;
+}
+html, body, .tooltip, .popover {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* BOOTSTRAP LINK/BUTTON OVERRIDES */
+a {
+  color: #FF5400;
+}
+a:hover {
+  /* #FF5400 darkened 10% */
+  color: #CC4300 !important;
+}
+.btn.btn-primary {
+  background-color: #6B003C !important;
+  /* #6B003C darkened 5% */
+  border-color: #51002E;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active {
+  /* #6B003C darkened 5% */
+  background-color: #51002E !important;
+  /* #6B003C darkened 10% */
+  border-color: #38001F !important;
+  /* #FFF darkened 10% */
+  color: #E6E6E6 !important;
+}
+.btn.btn-primary:focus {
+  /* #6B003C darkened 10% */
+  box-shadow: 0 0 0 0.2rem rgba(81, 0, 46, .5) !important;
+}
+
+/* BOOTSTRAP MISC OVERRIDES */
+hr {
+  border-top-color: #fff;
+}
+/* END - BOOTSTRAP OVERRIDES */
 
 .heading {
   margin-bottom: 3rem;
@@ -64,5 +112,19 @@
 }
 
 .socials-link {
-  color: #3e0085;
+  color: #6B003C;
+}
+
+.socials-link:hover {
+  color: #FF5400;
+}
+
+.link-neo-arcade {
+  text-decoration: underline;
+  color: #EAC67A;
+}
+
+.link-neo-arcade:hover {
+  /* Darken #EAC67A 10% */
+  color: #E3b34E !important;
 }
