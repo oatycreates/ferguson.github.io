@@ -62,21 +62,27 @@ a:hover {
   color: #CC4300 !important;
 }
 .btn.btn-primary {
-  background-color: #6B003C !important;
-  /* #6B003C darkened 5% */
-  border-color: #51002E;
+  background-color: #FF5400 !important;
+  /* #FF5400 darkened 5% */
+  border-color: #E64C00;
+  /* TODO: Replace prefixed transitions with autoprefixer */
+  -webkit-transition: background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
+  -o-transition: background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
+  transition: background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active {
-  /* #6B003C darkened 5% */
-  background-color: #51002E !important;
-  /* #6B003C darkened 10% */
-  border-color: #38001F !important;
+  /* #FF5400 darkened 5% */
+  background-color: #E64C00 !important;
+  /* #FF5400 darkened 10% */
+  border-color: #CC4300 !important;
   /* #FFF darkened 10% */
   color: #E6E6E6 !important;
 }
 .btn.btn-primary:focus {
-  /* #6B003C darkened 10% */
-  box-shadow: 0 0 0 0.2rem rgba(81, 0, 46, .5) !important;
+  /* #FF5400 darkened 10% */
+  /* TODO: Replace prefixed box-shadows with autoprefixer */
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(204, 67, 0, .5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(204, 67, 0, .5) !important;
 }
 
 /* BOOTSTRAP MISC OVERRIDES */
@@ -113,6 +119,10 @@ hr {
 
 .socials-link {
   color: #6B003C;
+  /* TODO: Replace prefixed transitions with autoprefixer */
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .socials-link:hover {
@@ -122,6 +132,10 @@ hr {
 .link-neo-arcade {
   text-decoration: underline;
   color: #EAC67A;
+  /* TODO: Replace prefixed transitions with autoprefixer */
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .link-neo-arcade:hover {
