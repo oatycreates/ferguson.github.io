@@ -8,7 +8,7 @@
     var $nameInput = $(contactFormNameSelector);
     var $emailSubject = $(contactFormEmailSubjectSelector);
     var name = $nameInput.val();
-    $emailSubject.val("New submission from patrickferguson.cloud - " + name);
+    $emailSubject.val("New submission from ferguson.cloud - " + name);
 
     // Submit analytics event
     gtag('event', 'contact_form_submit', {
